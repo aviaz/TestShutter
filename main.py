@@ -32,11 +32,11 @@ def switch_pin(pin_nr, is_open):
 
 
 # control shutters
-def shutter_action(direction):
+def shutter_action(direction, is_open):
     if direction == "up":
-        switch_pin(17)
+        switch_pin(17, is_open)
     else:
-        switch_pin(27)
+        switch_pin(27, is_open)
 
 
 def shutter_up():
